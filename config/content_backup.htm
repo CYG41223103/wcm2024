@@ -7,6 +7,62 @@
 <p style="padding-left: 30px;"><a href="https://github.com/mdecycu/cmsimde_site">https://github.com/mdecycu/cmsimde_site</a></p>
 <p style="padding-left: 30px;">此 Template 將 cmsimde 作為子目錄而非子模組, 使用者可以依照需求自行修改</p>
 <p style="padding-left: 30px;">倉儲對應網站: <a href="https://mde.tw/cmsimde_site">https://mde.tw/cmsimde_site</a></p>
+<h1>W6</h1>
+<p><span><span class="ui-provider bim bin bio bip biq bir bis bit biu biv biw bix biy biz bja bjb bjc bjd bje bjf bjg bjh bji bjj bjk bjl bjm bjn bjo bjp bjq bjr bjs bjt bju" dir="ltr">第六週實習操作:</span></span></p>
+<ol>
+<li>根據您的專業, 就 git 的使用, 從與 ChatGPT 的對話, 將內容整理到個人的第六網誌, 其中包含: git 的發展歷史, 創作人的相關履歷, 以及一般相同專業人士如何利用  git 解決內容管理問題?</li>
+<li>假如要在 Windows 實際 demo git client 與 git server, 該如何進行? 請將相關操作流程整理至個人第六週網誌中.</li>
+</ol>
+<h2>1.</h2>
+<p>Git 是一款分散式版本控制系統，最初由Linus Torvalds在2005年為了協調Linux核心開發而創建的。Git 的發展歷史可以追溯到Linux社區對於現有版本控制系統的不滿，尤其是對BitKeeper的不滿，因此Torvalds開始開發一個新的解決方案。Git 的設計目標是速度、資料完整性和支援分散式、非線性工作流。</p>
+<p>Linus Torvalds是Git的創始人之一，他在Linux開發中遇到的挑戰驅使他創建了Git。其他貢獻者也包括Junio Hamano等人。Git的發展在全球開發者社區中不斷得到貢獻和改進，成為了最受歡迎的版本控制系統之一。</p>
+<p>對於一般的專業人士，Git提供了強大的版本控制和協作工具，能夠有效解決內容管理問題。以下是一般專業人士如何利用Git解決內容管理問題的一些方法：</p>
+<ol>
+<li>
+<p><strong>版本控制</strong>：Git允許使用者追蹤文件的修改歷史，這對於團隊合作和追蹤個人工作進度非常重要。使用Git，您可以輕鬆地比較不同版本之間的差異，並恢復到先前的版本。</p>
+</li>
+<li>
+<p><strong>分支管理</strong>：Git的分支功能使得可以同時進行多個功能的開發，而不會干擾主要的代碼庫。這使得團隊能夠並行開發新功能、修復錯誤或進行實驗性的更改，而不會影響主要產品的穩定性。</p>
+</li>
+<li>
+<p><strong>合併和解決衝突</strong>：當多個開發者在同一份代碼上工作時，可能會出現衝突。Git提供了合併工具，可以自動合併不同版本的代碼，並提供了解決衝突的機制，以確保團隊能夠有效地協作。</p>
+</li>
+<li>
+<p><strong>遠程存儲和協作</strong>：Git可以與遠程存儲庫（如GitHub、GitLab或Bitbucket）集成，這使得團隊成員可以輕鬆地共享代碼、協作開發。通過遠程存儲庫，團隊成員可以在不同的地理位置工作，並且可以隨時隨地訪問最新的代碼。</p>
+</li>
+<li>
+<p><strong>代碼審查</strong>：Git可以與代碼審查工具集成，例如GitHub的Pull Request或GitLab的Merge Request，這使得團隊能夠進行代碼審查，確保代碼的質量和一致性。</p>
+</li>
+</ol>
+<p>總的來說，Git提供了一個強大而靈活的工具，能夠有效地解決內容管理問題，並促進團隊的合作和生產力。</p>
+<h2>2.</h2>
+<h3>1. 安裝Git客戶端和Git服務器：</h3>
+<h4>安裝Git客戶端：</h4>
+<p>前往Git官方網站（<a href="https://git-scm.com/%EF%BC%89%E4%B8%8B%E8%BC%89Git" target="_new">https://git-scm.com/）下載Git</a> for Windows安裝程式，然後按照指示進行安裝。安裝完成後，在命令提示符或PowerShell中檢查是否成功安裝了Git，可以運行以下命令來確認版本：</p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-bash">git --version </code></div>
+</div>
+<h4>安裝Git服務器：</h4>
+<p>在Windows上設置Git服務器，您可以使用多種方法，其中一個簡單的方法是使用GitLab或者是安裝Git的SSH服務器。</p>
+<ul>
+<li>
+<p><strong>使用GitLab</strong>：前往GitLab官方網站（<a href="https://about.gitlab.com/install/%EF%BC%89%E6%8C%89%E7%85%A7%E6%8C%87%E7%A4%BA%E5%AE%89%E8%A3%9DGitLab" target="_new">https://about.gitlab.com/install/）按照指示安裝GitLab</a> Community Edition。GitLab是一個完整的Git服務器，提供了用戶友好的Web界面和豐富的功能。</p>
+</li>
+<li>
+<p><strong>安裝Git的SSH服務器</strong>：您也可以在Windows上安裝Git的SSH服務器，以提供遠程訪問。您可以使用OpenSSH for Windows（<a href="https://github.com/PowerShell/Win32-OpenSSH/releases%EF%BC%89%E6%88%96%E8%80%85%E6%98%AFCygwin%EF%BC%88https://www.cygwin.com/%EF%BC%89%E3%80%82" target="_new">https://github.com/PowerShell/Win32-OpenSSH/releases）或者是Cygwin（https://www.cygwin.com/）。</a></p>
+</li>
+</ul>
+<h3>2. 設置Git客戶端和Git服務器：</h3>
+<h4>設置Git客戶端：</h4>
+<p>使用Git客戶端，您可以克隆遠程存儲庫、創建新的代碼庫、提交更改等。首先，請確保您已經設置了全局的使用者名稱和電子郵件地址：</p>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="p-4 overflow-y-auto"><span>git config --global user.name </span><span class="hljs-string">"Your Name"</span></div>
+<div class="p-4 overflow-y-auto"><span class="hljs-string"><span>git config --global user.email </span>"your.email@example.com"</span></div>
+</div>
+<h4>設置Git服務器：</h4>
+<p>根據您使用的Git服務器，請按照相應的文檔進行配置。如果您使用GitLab，則可以通過Web界面輕鬆設置用戶、項目等。</p>
+<h3>3. 進行演示：</h3>
+<p>在演示中，您可以展示如何使用Git客戶端（如命令行或圖形用戶界面）來執行常見的Git操作，例如克隆存儲庫、提交更改、推送到遠程存儲庫等。同時，您還可以展示如何通過Git服務器來管理遠程存儲庫，例如設置訪問權限、查看提交歷史等。</p>
 <h1>cmsimde</h1>
 <p><span style="background-color: #ccffcc;">SMap</span> - SiteMap - 依照階次列出網站的所有頁面.</p>
 <p><span style="background-color: #ccffcc;">EditA</span> - Edit All page - 將所有頁面放入編輯模式中, 主要用來處理頁面搬遷, 刪除或決定衝突頁面內容版本.</p>
